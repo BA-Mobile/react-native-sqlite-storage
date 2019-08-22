@@ -637,7 +637,6 @@ public class SQLitePlugin extends ReactContextBaseJavaModule {
 
                 // INSERT:
                 else if (queryType == QueryType.insert && queryParams != null) {
-                    FLog.d("executeSqlBatch","INSERT");
                     needRawQuery = false;
 
                     SQLiteStatement myStatement = mydb.compileStatement(query);
